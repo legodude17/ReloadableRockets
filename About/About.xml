@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>Rocket Reloading</name>
+    <name>Reloadable Rockets</name>
     <author>legodude17</author>
     <url></url>
     <description>Makes it so rocket launchers (doomsday, triple, etc.) can be reloaded with rockets rather than being single use.</description>
