@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded - Heavy - Reloading Patch</li>
+        </mods>
+        <nomatch Class="PatchOperationInsert">
+            <xpath>/Defs/ThinkTreeDef[defName="MainColonistBehaviorCore"]/thinkRoot/subNodes/li/subNodes/li[@Class="JobGiver_Reload"]</xpath>
+            <value>
+                <li Class="WeaponReloading.JobGiver_ReloadWeapon" />
+            </value>
+        </nomatch>
+    </Operation>
+</Patch>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_TripleRocket" or defName="Gun_DoomsdayRocket"]/verbs/li/verbClass</xpath>
+        <value>
+            <verbClass>WeaponReloading.Verb_ShootReloadable</verbClass>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Gun_TripleRocket"]/comps</xpath>
+        <value>
+            <li Class="WeaponReloading.CompProperties_ReloadableWeapon">
+                <MaxShots>3</MaxShots>
+                <AmmoFilter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </AmmoFilter>
+                <ItemsPerShot>100</ItemsPerShot>
+                <ReloadTimePerShot>2</ReloadTimePerShot>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Gun_DoomsdayRocket"]/comps</xpath>
+        <value>
+            <li Class="WeaponReloading.CompProperties_ReloadableWeapon">
+                <MaxShots>1</MaxShots>
+                <AmmoFilter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </AmmoFilter>
+                <ItemsPerShot>150</ItemsPerShot>
+                <ReloadTimePerShot>10</ReloadTimePerShot>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VWE_Gun_RocketLauncher" or defName="VWE_Gun_ChargeRocketLauncher"]/verbs/li/verbClass</xpath>
+                    <value>
+                        <verbClass>WeaponReloading.Verb_ShootReloadable</verbClass>
+                    </value>
+                </li>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VWE_Gun_RocketLauncher"]/comps</xpath>
+                    <value>
+                        <li Class="WeaponReloading.CompProperties_ReloadableWeapon">
+                            <MaxShots>1</MaxShots>
+                            <AmmoFilter>
+                                <thingDefs>
+                                    <li>Chemfuel</li>
+                                </thingDefs>
+                            </AmmoFilter>
+                            <ItemsPerShot>100</ItemsPerShot>
+                            <ReloadTimePerShot>2</ReloadTimePerShot>
+                        </li>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VWE_Gun_ChargeRocketLauncher"]/comps</xpath>
+                    <value>
+                        <li Class="WeaponReloading.CompProperties_ReloadableWeapon">
+                            <MaxShots>1</MaxShots>
+                            <AmmoFilter>
+                                <thingDefs>
+                                    <li>Shell_AntigrainWarhead</li>
+                                </thingDefs>
+                            </AmmoFilter>
+                            <ItemsPerShot>1</ItemsPerShot>
+                            <ReloadTimePerShot>15</ReloadTimePerShot>
+                        </li>
+                    </value>
+                </Operation>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

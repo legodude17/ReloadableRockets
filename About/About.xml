@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Rocket Reloading</name>
+    <author>legodude17</author>
+    <url></url>
+    <description>Makes it so rocket launchers (doomsday, triple, etc.) can be reloaded with rockets rather than being single use.</description>
+    <packageId>legodude17.rocketreloading</packageId>
+    <supportedVersions>
+        <li>1.2</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+            <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>brrainz.harmony</li>
+        <li>legodude17.heavyweaponsreloading</li>
+    </loadAfter>
+</ModMetaData>
