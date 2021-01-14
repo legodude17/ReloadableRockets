@@ -16,7 +16,7 @@
                         <li>Chemfuel</li>
                     </thingDefs>
                 </AmmoFilter>
-                <ItemsPerShot>100</ItemsPerShot>
+                <ItemsPerShot>25</ItemsPerShot>
                 <ReloadTimePerShot>2</ReloadTimePerShot>
             </li>
         </value>
@@ -31,7 +31,7 @@
                         <li>Chemfuel</li>
                     </thingDefs>
                 </AmmoFilter>
-                <ItemsPerShot>150</ItemsPerShot>
+                <ItemsPerShot>50</ItemsPerShot>
                 <ReloadTimePerShot>10</ReloadTimePerShot>
             </li>
         </value>
@@ -48,7 +48,7 @@
                         <verbClass>WeaponReloading.Verb_ShootReloadable</verbClass>
                     </value>
                 </li>
-                <Operation Class="PatchOperationAdd">
+                <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="VWE_Gun_RocketLauncher"]/comps</xpath>
                     <value>
                         <li Class="WeaponReloading.CompProperties_ReloadableWeapon">
@@ -58,12 +58,12 @@
                                     <li>Chemfuel</li>
                                 </thingDefs>
                             </AmmoFilter>
-                            <ItemsPerShot>100</ItemsPerShot>
+                            <ItemsPerShot>25</ItemsPerShot>
                             <ReloadTimePerShot>2</ReloadTimePerShot>
                         </li>
                     </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
+                </li>
+                <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="VWE_Gun_ChargeRocketLauncher"]/comps</xpath>
                     <value>
                         <li Class="WeaponReloading.CompProperties_ReloadableWeapon">
@@ -77,7 +77,7 @@
                             <ReloadTimePerShot>15</ReloadTimePerShot>
                         </li>
                     </value>
-                </Operation>
+                </li>
             </operations>
         </match>
     </Operation>
