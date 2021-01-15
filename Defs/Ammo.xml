@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingCategoryDef>
+        <defName>RocketAmmo</defName>
+        <label>rockets</label>
+        <parent>Manufactured</parent>
+        <iconPath>RR_RocketAmmo/RR_RocketAmmo_a</iconPath>
+    </ThingCategoryDef>
+
+    <ThingDef ParentName="MakeableShellBase">
+        <defName>RR_RocketAmmo</defName>
+        <label>rocket</label>
+        <description>An explosive warhead attached to fins and a booster engine to be fired from rocket launchers.</description>
+        <graphicData>
+            <texPath>RR_RocketAmmo</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <stackLimit>40</stackLimit>
+        <costList>
+            <Steel>30</Steel>
+            <Chemfuel>20</Chemfuel>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>Mortars</researchPrerequisite>
+        </recipeMaker>
+        <thingCategories Inherit="False">
+            <li>RocketAmmo</li>
+        </thingCategories>
+        <tradeTags Inherit="False" />
+    </ThingDef>
+
+    <ThingDef ParentName="MakeableShellBase">
+        <defName>RR_DoomsdayRocketAmmo</defName>
+        <label>doomsday rocket</label>
+        <description>A large rocket meant to be fired from doomsday rocket launchers.</description>
+        <graphicData>
+            <texPath>RR_DoomsdayRocketAmmo</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <stackLimit>40</stackLimit>
+        <costList>
+            <Plasteel>5</Plasteel>
+            <Chemfuel>40</Chemfuel>
+            <Shell_AntigrainWarhead>1</Shell_AntigrainWarhead>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>Mortars</researchPrerequisite>
+        </recipeMaker>
+        <thingCategories Inherit="False">
+            <li>RocketAmmo</li>
+        </thingCategories>
+        <tradeTags Inherit="False" />
+    </ThingDef>
+
+    <ThingDef ParentName="MakeableShellBase">
+        <defName>RR_ChargeRocketAmmo</defName>
+        <label>charge rocket</label>
+        <description>A laser targetted antigrain warhead attached to effecient booster engine with precision fins, meant to be fired from railgun-enhanced rocket launchers.</description>
+        <graphicData>
+            <texPath>RR_ChargeRocketAmmo</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <stackLimit>40</stackLimit>
+        <costList>
+            <Steel>120</Steel>
+            <ComponentSpacer>2</ComponentSpacer>
+            <Shell_AntigrainWarhead>1</Shell_AntigrainWarhead>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>VWE_LaserTargetingSystems</researchPrerequisite>
+        </recipeMaker>
+        <thingCategories Inherit="False">
+            <li>RocketAmmo</li>
+        </thingCategories>
+        <tradeTags Inherit="False" />
+    </ThingDef>
+</Defs>

@@ -13,10 +13,10 @@
                 <MaxShots>3</MaxShots>
                 <AmmoFilter>
                     <thingDefs>
-                        <li>Chemfuel</li>
+                        <li>RR_RocketAmmo</li>
                     </thingDefs>
                 </AmmoFilter>
-                <ItemsPerShot>25</ItemsPerShot>
+                <ItemsPerShot>1</ItemsPerShot>
                 <ReloadTimePerShot>2</ReloadTimePerShot>
             </li>
         </value>
@@ -28,10 +28,10 @@
                 <MaxShots>1</MaxShots>
                 <AmmoFilter>
                     <thingDefs>
-                        <li>Chemfuel</li>
+                        <li>RR_DoomsdayRocketAmmo</li>
                     </thingDefs>
                 </AmmoFilter>
-                <ItemsPerShot>50</ItemsPerShot>
+                <ItemsPerShot>1</ItemsPerShot>
                 <ReloadTimePerShot>10</ReloadTimePerShot>
             </li>
         </value>
@@ -55,11 +55,11 @@
                             <MaxShots>1</MaxShots>
                             <AmmoFilter>
                                 <thingDefs>
-                                    <li>Chemfuel</li>
+                                    <li>RR_RocketAmmo</li>
                                 </thingDefs>
                             </AmmoFilter>
-                            <ItemsPerShot>25</ItemsPerShot>
-                            <ReloadTimePerShot>2</ReloadTimePerShot>
+                            <ItemsPerShot>1</ItemsPerShot>
+                            <ReloadTimePerShot>5</ReloadTimePerShot>
                         </li>
                     </value>
                 </li>
@@ -70,7 +70,7 @@
                             <MaxShots>1</MaxShots>
                             <AmmoFilter>
                                 <thingDefs>
-                                    <li>Shell_AntigrainWarhead</li>
+                                    <li>RR_ChargeRocketAmmo</li>
                                 </thingDefs>
                             </AmmoFilter>
                             <ItemsPerShot>1</ItemsPerShot>
