@@ -15,7 +15,7 @@
             <texPath>RR_RocketAmmo</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
-        <stackLimit>40</stackLimit>
+        <stackLimit>25</stackLimit>
         <costList>
             <Steel>30</Steel>
             <Chemfuel>20</Chemfuel>
@@ -44,7 +44,7 @@
             <texPath>RR_DoomsdayRocketAmmo</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
-        <stackLimit>40</stackLimit>
+        <stackLimit>25</stackLimit>
         <costList>
             <Plasteel>5</Plasteel>
             <Chemfuel>40</Chemfuel>
@@ -74,7 +74,7 @@
             <texPath>RR_ChargeRocketAmmo</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
-        <stackLimit>40</stackLimit>
+        <stackLimit>25</stackLimit>
         <costList>
             <Steel>120</Steel>
             <ComponentSpacer>2</ComponentSpacer>
