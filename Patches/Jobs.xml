@@ -4,12 +4,23 @@
         <mods>
             <li>Vanilla Weapons Expanded - Heavy - Reloading Patch</li>
         </mods>
-        <nomatch Class="PatchOperationInsert">
-            <xpath>/Defs/ThinkTreeDef[defName="MainColonistBehaviorCore"]/thinkRoot/subNodes/li/subNodes/li[@Class="JobGiver_Reload"]</xpath>
-            <value>
-                <li Class="WeaponReloading.JobGiver_ReloadFromInventory" />
-                <li Class="WeaponReloading.JobGiver_ReloadWeapon" />
-            </value>
+        <nomatch Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationInsert">
+                    <xpath>/Defs/ThinkTreeDef[defName="MainColonistBehaviorCore"]/thinkRoot/subNodes/li/subNodes/li[@Class="JobGiver_Reload"]</xpath>
+                    <value>
+                        <li Class="WeaponReloading.JobGiver_ReloadFromInventory" />
+                        <li Class="WeaponReloading.JobGiver_ReloadWeapon" />
+                    </value>
+                </li>
+                <li Class="PatchOperationInsert">
+                    <order>Prepend</order>
+                    <xpath>/Defs/DutyDef/thinkNode/subNodes/li[@Class="JobGiver_AIFightEnemies"]</xpath>
+                    <value>
+                        <li Class="WeaponReloading.JobGiver_ReloadFromInventory" />
+                    </value>
+                </li>
+            </operations>
         </nomatch>
     </Operation>
 </Patch>

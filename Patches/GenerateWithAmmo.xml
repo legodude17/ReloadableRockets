@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/ThingDef[defName="Gun_TripleRocket"]</xpath>
+        <value>
+            <li Class="WeaponReloading.GenerateWithAmmo">
+                <min>
+                    <RR_RocketAmmo>3</RR_RocketAmmo>
+                </min>
+                <max>
+                    <RR_RocketAmmo>9</RR_RocketAmmo>
+                </max>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName="VWE_Gun_RocketLauncher"]</xpath>
+                    <value>
+                        <li Class="WeaponReloading.GenerateWithAmmo">
+                            <min>
+                                <RR_RocketAmmo>1</RR_RocketAmmo>
+                            </min>
+                            <max>
+                                <RR_RocketAmmo>10</RR_RocketAmmo>
+                            </max>
+                        </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
