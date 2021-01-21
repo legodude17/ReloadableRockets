@@ -46,9 +46,10 @@
         </graphicData>
         <stackLimit>25</stackLimit>
         <costList>
-            <Steel>20</Steel>
-            <Chemfuel>40</Chemfuel>
-            <Shell_AntigrainWarhead>1</Shell_AntigrainWarhead>
+            <Plasteel>50</Plasteel>
+            <Chemfuel>60</Chemfuel>
+            <Uranium>20</Uranium>
+            <ComponentSpacer>1</ComponentSpacer>
         </costList>
         <recipeMaker>
             <researchPrerequisite>Mortars</researchPrerequisite>
