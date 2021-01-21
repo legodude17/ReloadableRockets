@@ -7,6 +7,7 @@
         <nomatch Class="PatchOperationInsert">
             <xpath>/Defs/ThinkTreeDef[defName="MainColonistBehaviorCore"]/thinkRoot/subNodes/li/subNodes/li[@Class="JobGiver_Reload"]</xpath>
             <value>
+                <li Class="WeaponReloading.JobGiver_ReloadFromInventory" />
                 <li Class="WeaponReloading.JobGiver_ReloadWeapon" />
             </value>
         </nomatch>

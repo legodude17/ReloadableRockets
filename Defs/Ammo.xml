@@ -46,7 +46,7 @@
         </graphicData>
         <stackLimit>25</stackLimit>
         <costList>
-            <Plasteel>5</Plasteel>
+            <Steel>20</Steel>
             <Chemfuel>40</Chemfuel>
             <Shell_AntigrainWarhead>1</Shell_AntigrainWarhead>
         </costList>
@@ -76,12 +76,15 @@
         </graphicData>
         <stackLimit>25</stackLimit>
         <costList>
-            <Steel>120</Steel>
-            <ComponentSpacer>2</ComponentSpacer>
+            <Plasteel>50</Plasteel>
+            <ComponentSpacer>1</ComponentSpacer>
             <Shell_AntigrainWarhead>1</Shell_AntigrainWarhead>
         </costList>
         <recipeMaker>
             <researchPrerequisite>VWE_LaserTargetingSystems</researchPrerequisite>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
         </recipeMaker>
         <thingCategories Inherit="False">
             <li>RocketAmmo</li>
