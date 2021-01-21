@@ -19,5 +19,6 @@
     <loadAfter>
         <li>brrainz.harmony</li>
         <li>legodude17.heavyweaponsreloading</li>
+        <li>VanillaExpanded.VFESecurity</li>
     </loadAfter>
 </ModMetaData>
