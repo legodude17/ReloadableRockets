@@ -10,6 +10,7 @@
         <xpath>/Defs/ThingDef[defName="Gun_TripleRocket"]/comps</xpath>
         <value>
             <li Class="WeaponReloading.CompProperties_ReloadableWeapon">
+                <compClass>WeaponReloading.CompReloadableWeapon</compClass>
                 <MaxShots>3</MaxShots>
                 <AmmoFilter>
                     <thingDefs>
@@ -25,6 +26,7 @@
         <xpath>/Defs/ThingDef[defName="Gun_DoomsdayRocket"]/comps</xpath>
         <value>
             <li Class="WeaponReloading.CompProperties_ReloadableWeapon">
+                <compClass>WeaponReloading.CompReloadableWeapon</compClass>
                 <MaxShots>1</MaxShots>
                 <AmmoFilter>
                     <thingDefs>
@@ -52,6 +54,7 @@
                     <xpath>/Defs/ThingDef[defName="VWE_Gun_RocketLauncher"]/comps</xpath>
                     <value>
                         <li Class="WeaponReloading.CompProperties_ReloadableWeapon">
+                            <compClass>WeaponReloading.CompReloadableWeapon</compClass>
                             <MaxShots>1</MaxShots>
                             <AmmoFilter>
                                 <thingDefs>
@@ -67,6 +70,7 @@
                     <xpath>/Defs/ThingDef[defName="VWE_Gun_ChargeRocketLauncher"]/comps</xpath>
                     <value>
                         <li Class="WeaponReloading.CompProperties_ReloadableWeapon">
+                            <compClass>WeaponReloading.CompReloadableWeapon</compClass>
                             <MaxShots>1</MaxShots>
                             <AmmoFilter>
                                 <thingDefs>
