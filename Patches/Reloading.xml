@@ -19,6 +19,7 @@
                 </AmmoFilter>
                 <ItemsPerShot>1</ItemsPerShot>
                 <ReloadTimePerShot>2</ReloadTimePerShot>
+                <ReloadSound>ReloadRocket</ReloadSound>
             </li>
         </value>
     </Operation>
@@ -35,6 +36,7 @@
                 </AmmoFilter>
                 <ItemsPerShot>1</ItemsPerShot>
                 <ReloadTimePerShot>10</ReloadTimePerShot>
+                <ReloadSound>ReloadRocket</ReloadSound>
             </li>
         </value>
     </Operation>
@@ -63,6 +65,7 @@
                             </AmmoFilter>
                             <ItemsPerShot>1</ItemsPerShot>
                             <ReloadTimePerShot>5</ReloadTimePerShot>
+                            <ReloadSound>ReloadRocket</ReloadSound>
                         </li>
                     </value>
                 </li>
@@ -79,6 +82,7 @@
                             </AmmoFilter>
                             <ItemsPerShot>1</ItemsPerShot>
                             <ReloadTimePerShot>15</ReloadTimePerShot>
+                            <ReloadSound>ReloadRocket</ReloadSound>
                         </li>
                     </value>
                 </li>

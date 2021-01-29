@@ -12,6 +12,13 @@
         <driverClass>WeaponReloading.JobDriver_ReloadFromInventory</driverClass>
         <reportString>reloading TargetA.</reportString>
         <suspendable>false</suspendable>
+        <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+    </JobDef>
+    <JobDef>
+        <defName>UnloadWeapon</defName>
+        <driverClass>WeaponReloading.JobDriver_Unload</driverClass>
+        <reportString>unloading TargetA.</reportString>
+        <suspendable>false</suspendable>
         <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
     </JobDef>
 </Defs>
