@@ -3,7 +3,7 @@
     <Operation Class="PatchOperationAddModExtension">
         <xpath>/Defs/ThingDef[defName="Gun_TripleRocket"]</xpath>
         <value>
-            <li Class="WeaponReloading.GenerateWithAmmo">
+            <li Class="Reloading.GenerateWithAmmo">
                 <min>
                     <RR_RocketAmmo>3</RR_RocketAmmo>
                 </min>
@@ -22,7 +22,7 @@
                 <li Class="PatchOperationAddModExtension">
                     <xpath>/Defs/ThingDef[defName="VWE_Gun_RocketLauncher"]</xpath>
                     <value>
-                        <li Class="WeaponReloading.GenerateWithAmmo">
+                        <li Class="Reloading.GenerateWithAmmo">
                             <min>
                                 <RR_RocketAmmo>1</RR_RocketAmmo>
                             </min>

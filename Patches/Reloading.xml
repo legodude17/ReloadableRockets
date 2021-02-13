@@ -3,14 +3,14 @@
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[defName="Gun_TripleRocket" or defName="Gun_DoomsdayRocket"]/verbs/li/verbClass</xpath>
         <value>
-            <verbClass>WeaponReloading.Verb_ShootReloadable</verbClass>
+            <verbClass>Reloading.Verb_ShootReloadable</verbClass>
         </value>
     </Operation>
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Gun_TripleRocket"]/comps</xpath>
         <value>
-            <li Class="WeaponReloading.CompProperties_ReloadableWeapon">
-                <compClass>WeaponReloading.CompReloadableWeapon</compClass>
+            <li Class="Reloading.CompProperties_Reloadable">
+                <compClass>Reloading.CompReloadable</compClass>
                 <MaxShots>3</MaxShots>
                 <AmmoFilter>
                     <thingDefs>
@@ -26,8 +26,8 @@
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Gun_DoomsdayRocket"]/comps</xpath>
         <value>
-            <li Class="WeaponReloading.CompProperties_ReloadableWeapon">
-                <compClass>WeaponReloading.CompReloadableWeapon</compClass>
+            <li Class="Reloading.CompProperties_Reloadable">
+                <compClass>Reloading.CompReloadable</compClass>
                 <MaxShots>1</MaxShots>
                 <AmmoFilter>
                     <thingDefs>
@@ -49,14 +49,14 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="VWE_Gun_RocketLauncher" or defName="VWE_Gun_ChargeRocketLauncher"]/verbs/li/verbClass</xpath>
                     <value>
-                        <verbClass>WeaponReloading.Verb_ShootReloadable</verbClass>
+                        <verbClass>Reloading.Verb_ShootReloadable</verbClass>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="VWE_Gun_RocketLauncher"]/comps</xpath>
                     <value>
-                        <li Class="WeaponReloading.CompProperties_ReloadableWeapon">
-                            <compClass>WeaponReloading.CompReloadableWeapon</compClass>
+                        <li Class="Reloading.CompProperties_Reloadable">
+                            <compClass>Reloading.CompReloadable</compClass>
                             <MaxShots>1</MaxShots>
                             <AmmoFilter>
                                 <thingDefs>
@@ -72,8 +72,8 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="VWE_Gun_ChargeRocketLauncher"]/comps</xpath>
                     <value>
-                        <li Class="WeaponReloading.CompProperties_ReloadableWeapon">
-                            <compClass>WeaponReloading.CompReloadableWeapon</compClass>
+                        <li Class="Reloading.CompProperties_Reloadable">
+                            <compClass>Reloading.CompReloadable</compClass>
                             <MaxShots>1</MaxShots>
                             <AmmoFilter>
                                 <thingDefs>
