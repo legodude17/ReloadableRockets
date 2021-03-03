@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+    <!-- Change verbClass of Gun_TripleRocket and Gun_DoomsdayRocket to Reloading.Verb_ShootReloadable -->
     <Operation Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[defName="Gun_TripleRocket" or defName="Gun_DoomsdayRocket"]/verbs/li/verbClass</xpath>
         <value>
             <verbClass>Reloading.Verb_ShootReloadable</verbClass>
         </value>
     </Operation>
+    <!-- Add reloading comp to Gun_TripleRocket -->
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Gun_TripleRocket"]/comps</xpath>
         <value>
@@ -23,6 +25,7 @@
             </li>
         </value>
     </Operation>
+    <!-- Add reloading comp to Gun_DoomsdayRocket -->
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Gun_DoomsdayRocket"]/comps</xpath>
         <value>
