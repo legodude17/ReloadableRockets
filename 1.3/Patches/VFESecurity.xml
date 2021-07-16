@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Security</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VFES_Turret_TriRocket"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
+                    <value>
+                        <fuelFilter>
+                            <thingDefs>
+                                <li>RR_RocketAmmo</li>
+                            </thingDefs>
+                        </fuelFilter>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

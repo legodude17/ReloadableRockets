@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Add reloading comp to Gun_TripleRocket -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Gun_TripleRocket"]/comps</xpath>
+        <value>
+            <li Class="Reloading.CompProperties_Reloadable">
+                <compClass>Reloading.CompReloadable</compClass>
+                <MaxShots>3</MaxShots>
+                <AmmoFilter>
+                    <thingDefs>
+                        <li>RR_RocketAmmo</li>
+                    </thingDefs>
+                </AmmoFilter>
+                <ItemsPerShot>1</ItemsPerShot>
+                <ReloadTimePerShot>2</ReloadTimePerShot>
+                <ReloadSound>ReloadRocket</ReloadSound>
+                <NewVerbClass>Verb_Shoot</NewVerbClass>
+                <GenerateAmmo>
+                    <RR_RocketAmmo>3~9</RR_RocketAmmo>
+                </GenerateAmmo>
+            </li>
+        </value>
+    </Operation>
+    <!-- Add reloading comp to Gun_DoomsdayRocket -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Gun_DoomsdayRocket"]/comps</xpath>
+        <value>
+            <li Class="Reloading.CompProperties_Reloadable">
+                <compClass>Reloading.CompReloadable</compClass>
+                <MaxShots>1</MaxShots>
+                <AmmoFilter>
+                    <thingDefs>
+                        <li>RR_DoomsdayRocketAmmo</li>
+                    </thingDefs>
+                </AmmoFilter>
+                <ItemsPerShot>1</ItemsPerShot>
+                <ReloadTimePerShot>10</ReloadTimePerShot>
+                <ReloadSound>ReloadRocket</ReloadSound>
+                <NewVerbClass>Verb_Shoot</NewVerbClass>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VWE_Gun_RocketLauncher"]/comps</xpath>
+                    <value>
+                        <li Class="Reloading.CompProperties_Reloadable">
+                            <compClass>Reloading.CompReloadable</compClass>
+                            <MaxShots>1</MaxShots>
+                            <AmmoFilter>
+                                <thingDefs>
+                                    <li>RR_RocketAmmo</li>
+                                </thingDefs>
+                            </AmmoFilter>
+                            <ItemsPerShot>1</ItemsPerShot>
+                            <ReloadTimePerShot>5</ReloadTimePerShot>
+                            <ReloadSound>ReloadRocket</ReloadSound>
+                            <NewVerbClass>Verb_Shoot</NewVerbClass>
+                            <GenerateAmmo>
+                                <RR_RocketAmmo>1~10</RR_RocketAmmo>
+                            </GenerateAmmo>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VWE_Gun_ChargeRocketLauncher"]/comps</xpath>
+                    <value>
+                        <li Class="Reloading.CompProperties_Reloadable">
+                            <compClass>Reloading.CompReloadable</compClass>
+                            <MaxShots>1</MaxShots>
+                            <AmmoFilter>
+                                <thingDefs>
+                                    <li>RR_ChargeRocketAmmo</li>
+                                </thingDefs>
+                            </AmmoFilter>
+                            <ItemsPerShot>1</ItemsPerShot>
+                            <ReloadTimePerShot>15</ReloadTimePerShot>
+                            <ReloadSound>ReloadRocket</ReloadSound>
+                            <NewVerbClass>Verb_Shoot</NewVerbClass>
+                        </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
