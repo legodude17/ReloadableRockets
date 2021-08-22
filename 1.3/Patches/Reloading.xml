@@ -19,6 +19,7 @@
                 <GenerateAmmo>
                     <RR_RocketAmmo>3~9</RR_RocketAmmo>
                 </GenerateAmmo>
+                <GenerateBackupWeapon>true</GenerateBackupWeapon>
             </li>
         </value>
     </Operation>
@@ -38,6 +39,7 @@
                 <ReloadTimePerShot>10</ReloadTimePerShot>
                 <ReloadSound>ReloadRocket</ReloadSound>
                 <NewVerbClass>Verb_Shoot</NewVerbClass>
+                <GenerateBackupWeapon>true</GenerateBackupWeapon>
             </li>
         </value>
     </Operation>
@@ -65,6 +67,7 @@
                             <GenerateAmmo>
                                 <RR_RocketAmmo>1~10</RR_RocketAmmo>
                             </GenerateAmmo>
+                            <GenerateBackupWeapon>true</GenerateBackupWeapon>
                         </li>
                     </value>
                 </li>
@@ -83,6 +86,7 @@
                             <ReloadTimePerShot>15</ReloadTimePerShot>
                             <ReloadSound>ReloadRocket</ReloadSound>
                             <NewVerbClass>Verb_Shoot</NewVerbClass>
+                            <GenerateBackupWeapon>true</GenerateBackupWeapon>
                         </li>
                     </value>
                 </li>
