@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_TripleRocket"]/description</xpath>
+        <value>
+            <description>A large rocket launcher that fires three large-bore explosive rockets. Good against small groups of tough targets.\n\nBecause of its unwieldiness and the massive destruction it causes, it's said that one must be slightly crazy to use this weapon. Must be reloaded with 3 standard rockets after every use.</description>
+            <descriptionHyperlinks>
+                <ThingDef>RR_RocketAmmo</ThingDef>
+            </descriptionHyperlinks>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Gun_DoomsdayRocket"]/description</xpath>
+        <value>
+            <description>A heavy rocket launcher that fires a massive explosive projectile. Good against large groups of soft targets. Starts fires.\n\nBecause of its unwieldiness and the massive destruction it causes, it's said that one must be slightly crazy to use this weapon. Must be reloaded with a single doomsday rocket after every use.</description>
+            <descriptionHyperlinks>
+                <ThingDef>RR_DoomsdayRocketAmmo</ThingDef>
+            </descriptionHyperlinks>
+        </value>
+    </Operation>
+</Patch>

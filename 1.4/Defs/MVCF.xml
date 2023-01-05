@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<Defs>
+    <MVCF.ModDef>
+        <defName>RocketReloading</defName>
+        <label>Reloadable Rockets</label>
+        <description>Reload rockets</description>
+        <ActivateFeatures>
+            <li>Reloading</li>
+        </ActivateFeatures>
+    </MVCF.ModDef>
+</Defs>

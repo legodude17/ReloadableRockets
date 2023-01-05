@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="RR_RocketAmmo"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite>VWE_HeavyWeapons</researchPrerequisite>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="RR_DoomsdayRocketAmmo"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite>VWE_HeavyWeapons</researchPrerequisite>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VWE_Gun_ChargeRocketLauncher"]/description</xpath>
+                    <value>
+                        <description>Fires anti grain shells at precise accuracy due to laser targeting. The warhead explodes in the air, releasing a wave of deadly electroshock. Enhanced with railgun-type launch systems to support heavier warheads. Must be reloaded with charge rockets after every use.</description>
+                        <descriptionHyperlinks>
+                            <ThingDef>RR_ChargeRocketAmmo</ThingDef>
+                        </descriptionHyperlinks>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VWE_Gun_RocketLauncher"]/description</xpath>
+                    <value>
+                        <description>Fires one standard explosive rocket at a time at high accuracy. Must be reloaded with a rocket after every use.</description>
+                        <descriptionHyperlinks>
+                            <ThingDef>RR_RocketAmmo</ThingDef>
+                        </descriptionHyperlinks>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VWE_Gun_ChargeRocketLauncher"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <Steel>100</Steel>
+                            <Plasteel>50</Plasteel>
+                            <ComponentSpacer>3</ComponentSpacer>
+                            <Shell_AntigrainWarhead>1</Shell_AntigrainWarhead>
+                        </costList>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Gun_TripleRocket"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <Steel>170</Steel>
+                            <ComponentIndustrial>10</ComponentIndustrial>
+                            <Shell_HighExplosive>3</Shell_HighExplosive>
+                        </costList>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Gun_DoomsdayRocket"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <Steel>50</Steel>
+                            <Plasteel>50</Plasteel>
+                            <ComponentIndustrial>15</ComponentIndustrial>
+                            <Shell_AntigrainWarhead>1</Shell_AntigrainWarhead>
+                        </costList>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="VWE_Gun_RocketLauncher"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <Steel>70</Steel>
+                            <ComponentIndustrial>4</ComponentIndustrial>
+                            <Shell_HighExplosive>1</Shell_HighExplosive>
+                        </costList>
+                    </value>
+                </li>
+            </operations>
+        </match>
+        <nomatch Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="RR_ChargeRocketAmmo"]</xpath>
+        </nomatch>
+    </Operation>
+</Patch>
